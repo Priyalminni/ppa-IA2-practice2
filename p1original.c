@@ -1,8 +1,10 @@
 #include<stdio.h>
 void input(float *base,float *height)
 {
-printf("entre the  lenght base and height");
-scanf("%f , %f",base,height);
+printf("entre the  lenght of  height\n");
+scanf("%f",height);
+printf("enter the lenght of base\n");
+scanf("%f",base);
 
 }
 void find_area(float base , float height, float *area)
@@ -17,10 +19,11 @@ void output(float base, float height, float area)
 }
 int main ()
 {
-  float x,y,z;
-    input(&x,&y);
-   find_area(x,y,&z);  
-    output(x,y,z);
+  float base,height;
+    input(&base,&height);
+   float area;
+   find_area(base,height,&area);  
+    output(base,height,area);
     return 0;
     
 }
